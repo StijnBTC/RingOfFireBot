@@ -1,9 +1,8 @@
-from enum import Enum
+from ring_of_fire_bot.utils.ExtendedEnum import ExtendedEnum
 
 
-class STATUS(Enum):
-    WAITING_ON_PARTICIPANTS = 0
-    OPENING_CHANNELS = 1
-    BALANCING = 2
-    FINISHED = 3
-
+class RING_STATUS(ExtendedEnum):
+    WAITING = "Waiting on participants to join"
+    OPENING = "Opening channels"
+    BALANCING = "Balancing channels"
+    FINISHED = "Ring is finished"
